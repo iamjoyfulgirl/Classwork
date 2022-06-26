@@ -1,0 +1,180 @@
+/* color palette generated from avatar image on coolors.com */
+:root {
+  --lapis-lazuli: #37619bff;
+  --violet-blue-crayola: #6c72b9ff;
+  --prussian-blue: #182638ff;
+  --magenta: #ff1eecff;
+  --grey: #e0eae4;
+  --prussian-blue-2: #083169ff;
+  --blue-bell: #9196ca;
+}
+
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+
+body {
+  /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+  font-family: -apple-system,
+    BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--grey);
+  background-color: var(
+    --prussian-blue-2
+  );
+}
+
+.header {
+  font-family: "Trebuchet MS",
+    "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  background-color: var(
+    --prussian-blue
+  );
+  color: var(--magenta);
+}
+
+h1 {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+h2 {
+  flex: 1;
+  background-color: var(
+    --violet-blue-crayola
+  );
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: right;
+  padding: 10px, 0;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 40px;
+  float: right;
+  font-family: "Helvetica",
+    "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+nav a {
+  color: var(--blue-bell);
+  padding: 20px;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.hero {
+  height: 120px;
+  width: 100%;
+  margin-bottom: 0px;
+  background-image: url("../images/webdev-hero.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-me {
+  flex: 1;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: left;
+  flex-wrap: wrap-reverse;
+  display: inline-block;
+  /* flex-direction: column; */
+}
+
+.grid-container > div {
+  /* background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); */
+  /* text-align: center; */
+  /* padding: 20px 0; */
+  /* font-size: 30px; */
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px 5px;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid
+    var(--prussian-blue-2);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-me,
+.work {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: var(
+    --violet-blue-crayola
+  );
+  border: 1px solid
+    var(--prussian-blue-2);
+  padding-right: 15px;
+  font-size: 30px;
+  text-align: right;
+  padding: 10px;
+  /* display: inline-block; */
+  /* flex-direction: row; */
+  /* display: flex; */
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  margin-right: -1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+}
+
+.about-content,
+.work-content {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: white;
+  border: 1px solid
+    var(--prussian-blue-2);
+  color: var(--prussian-blue-2);
+  padding: 50px 20px 50px 20px;
+  font-size: 20px;
+  text-align: justify;
+  justify-content: flex-start;
+}
+
+.work-content-img {
+  flex: 1;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: left;
+  flex-wrap: wrap-reverse;
+  display: inline-block;
+  width: 25%;
+}

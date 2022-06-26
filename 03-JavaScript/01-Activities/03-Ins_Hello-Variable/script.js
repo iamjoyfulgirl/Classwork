@@ -18,3 +18,6 @@ console.log("My name is ");
 
 // Logs "My name is Tonya"
 console.log("My name is " + studentName);
+
+// coerces the string into a number
+console.log(Number('82'));
